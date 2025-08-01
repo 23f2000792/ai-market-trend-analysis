@@ -26,7 +26,3 @@ joblib>=1.4.0
 tqdm>=4.66.0
 requests>=2.32.0
 rich>=13.7.0
-
-# Time series forecasting (optional)
-prophet==1.1.5
-pystan==2.19.1.1
