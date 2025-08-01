@@ -14,21 +14,19 @@ lightgbm>=4.3.0
 yfinance>=0.2.30
 pandas-datareader>=0.10.0
 
-# Technical indicators
+# Technical indicators (replacing TA-Lib)
 pandas-ta==0.3.14b0
 
 # Dashboard
 streamlit>=1.28.2
 streamlit-option-menu>=0.3.6
 
-# Additional utilities
+# Utilities
 joblib>=1.4.0
 tqdm>=4.66.0
 requests>=2.32.0
-
-# For progress bars and notifications
 rich>=13.7.0
 
-# Optional: For time series forecasting
+# Time series forecasting (optional)
 prophet==1.1.5
 pystan==2.19.1.1
