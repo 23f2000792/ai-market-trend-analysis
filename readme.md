@@ -2,9 +2,6 @@
 
 A beginner-friendly machine learning project that predicts stock market trends using technical indicators and advanced ML algorithms.
 
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![Streamlit](https://img.shields.io/badge/streamlit-v1.15+-red.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## 📋 Table of Contents
 
@@ -15,7 +12,6 @@ A beginner-friendly machine learning project that predicts stock market trends u
 - [Installation](#-installation)
 - [Model Performance](#-model-performance)
 - [Technical Details](#-technical-details)
-- [Contributing](#-contributing)
 - [Disclaimer](#-disclaimer)
 
 ## 🎯 Overview
