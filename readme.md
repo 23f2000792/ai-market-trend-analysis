@@ -63,10 +63,10 @@ This project demonstrates how to build an end-to-end AI system for stock market 
 
 ### 1. Clone & Setup
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/23f2000792/ai-market-trend-analysis
 cd ai-market-trend-analysis
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -136,7 +136,7 @@ ai-market-trend-analysis/
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/23f2000792/ai-market-trend-analysis
 cd ai-market-trend-analysis
 ```
 
@@ -157,11 +157,6 @@ source venv/bin/activate
 4. **Install dependencies**
 ```bash
 pip install -r requirements.txt
-```
-
-5. **Verify installation**
-```bash
-python -c "import pandas, sklearn, streamlit; print('✅ All packages installed successfully!')"
 ```
 
 ## 📊 Model Performance
@@ -249,48 +244,7 @@ XGBClassifier(
 )
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Here are ways you can help:
-
-### Easy Contributions
-- 🐛 Report bugs or issues
-- 📖 Improve documentation
-- 🎨 Enhance the dashboard UI
-- 📊 Add new visualizations
-
-### Medium Contributions
-- 🔧 Add new technical indicators
-- 🤖 Implement new ML models
-- 📈 Improve feature engineering
-- 🧪 Add unit tests
-
-### Advanced Contributions
-- 🚀 Add real-time streaming data
-- 📰 Integrate news sentiment analysis
-- 🧠 Implement deep learning models (LSTM, Transformer)
-- ☁️ Add cloud deployment options
-
-### Contribution Process
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Add tests if applicable
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
-
 ## 📚 Learning Resources
-
-### Recommended Reading
-- **Technical Analysis**: "Technical Analysis of the Financial Markets" by John Murphy
-- **Machine Learning**: "Hands-On Machine Learning" by Aurélien Géron
-- **Python Finance**: "Python for Finance" by Yves Hilpisch
-
-### Online Courses
-- [Coursera: Machine Learning for Trading](https://www.coursera.org/learn/machine-learning-trading)
-- [edX: Introduction to Computational Finance and Financial Econometrics](https://www.edx.org/course/introduction-to-computational-finance-and-financi)
-
 ### APIs and Data Sources
 - [Yahoo Finance API](https://pypi.org/project/yfinance/)
 - [Alpha Vantage](https://www.alphavantage.co/)
@@ -327,5 +281,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 📧 **Contact**: krishgupta200510@gmail.com
 
 ---
-
-*Happy Learning and Coding! 🚀*
