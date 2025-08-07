@@ -31,7 +31,7 @@ except ImportError as e:
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Market Trend Analyzer",
+    page_title="Stock Market Trend Analyzer",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
