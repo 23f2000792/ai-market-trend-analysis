@@ -238,7 +238,7 @@ def main():
     """Main Streamlit application."""
 
     # Header
-    st.markdown('<h1 class="main-header">📈 AI Market Trend Analyzer</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">📈 AI Stock Market Trend Analyzer</h1>', unsafe_allow_html=True)
 
     # Load models
     trainer, engineer, models_loaded = load_models()
@@ -339,7 +339,7 @@ def main():
 
                             # Display prediction in sidebar
                             with col2:
-                                st.subheader("🔮 AI Market Prediction")
+                                st.subheader("Market Prediction")
 
                                 pred_color, pred_text = get_prediction_color_and_text(
                                     predictions[0], probabilities[0] if probabilities is not None else None
