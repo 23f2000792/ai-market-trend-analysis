@@ -14,8 +14,8 @@ lightgbm>=4.3.0
 yfinance>=0.2.30
 pandas-datareader>=0.10.0
 
-# Technical indicators (replacing TA-Lib)
-pandas-ta==0.3.14b0
+# Technical indicators
+pandas-ta
 
 # Dashboard
 streamlit>=1.28.2
