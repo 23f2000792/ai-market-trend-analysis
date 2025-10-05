@@ -174,7 +174,15 @@ class FeatureEngineer:
 
         # Volume Price Trend
         if TA_AVAILABLE:
-            df['VPT'] = ta.vpt(df['Close'], df['Volume'])
+            try:
+                if hasattr(ta, "volume_price_trend"):
+                    df["VPT"] = ta.volume_price_trend(df["Close"], df["Volume"])
+                else:
+                    df["VPT"] = (df["Volume"] * (df["Close"].pct_change())).cumsum()
+            except Exception as e:
+                print("Warning: VPT not available, computing manually.")
+                df["VPT"] = (df["Volume"] * (df["Close"].pct_change())).cumsum()
+
         else:
             df['VPT'] = (df['Close'].pct_change() * df['Volume']).cumsum()
 
