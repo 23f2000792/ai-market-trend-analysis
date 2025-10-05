@@ -113,10 +113,18 @@ class FeatureEngineer:
 
         # Bollinger Bands (price channels based on volatility)
         if TA_AVAILABLE:
-            bb = ta.bbands(df['Close'], length=20)
-            df['BB_Upper'] = bb['BBU_20_2.0']
-            df['BB_Middle'] = bb['BBM_20_2.0']
-            df['BB_Lower'] = bb['BBL_20_2.0']
+            bb = ta.bbands(df['Close'], length=20, std=2.0)
+            # Handle possible column name variations across versions
+            possible_cols = list(bb.columns)
+
+            upper = next((c for c in possible_cols if "BBU" in c), None)
+            middle = next((c for c in possible_cols if "BBM" in c), None)
+            lower = next((c for c in possible_cols if "BBL" in c), None)
+
+            df["BB_Upper"] = bb[upper]
+            df["BB_Middle"] = bb[middle]
+            df["BB_Lower"] = bb[lower]
+
         else:
             sma_20 = df['Close'].rolling(window=20).mean()
             std_20 = df['Close'].rolling(window=20).std()
